@@ -95,3 +95,23 @@ cartButtons.forEach((btn) => {
         }, 2000);
     });
 });
+
+const booksSlider = document.getElementById("booksSlider");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+const scrollAmount = booksSlider.clientWidth / 3; // 👈 une carte
+
+nextBtn.addEventListener("click", () => {
+    booksSlider.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth"
+    });
+});
+
+prevBtn.addEventListener("click", () => {
+    booksSlider.scrollBy({
+        left: -scrollAmount,
+        behavior: "smooth"
+    });
+});

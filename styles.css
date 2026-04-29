@@ -104,21 +104,50 @@ section {
     align-items: center;
 }
 
-/* BOOKS GRID */
+/* BOOKS SLIDER */
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
 .books-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    gap: 0;
+}
+
+.slider-btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+}
+
+.slider-btn:hover {
+    background-color: var(--hover);
 }
 
 /* BOOK CARD */
 .book-card {
     background: white;
-    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 0 0 calc(100% / 3); /* 👈 3 cartes visibles */
+    padding: 5px;
     transition: transform 0.2s;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .book-card:hover {
