@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Online Bookstore</h1>
+        <p>Your favorite place to discover amazing books</p>
+        <button id="themeToggle">🌙 Toggle Mode</button>
+        <p>🛒 Cart: <span id="cartCount">0</span></p>
+    </header>
+
+    <nav>
+        <a href="#welcome">Home</a>
+        <a href="#books">Featured Books</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="welcome" class="welcome-section">
+            <h2>Welcome to Our Bookstore</h2>
+            <p>
+                Discover a selection of inspiring, educational, and entertaining books.
+                Our bookstore helps readers find their next favorite book easily.
+            </p>
+        </section>
+
+        <section id="books" class="books-section">
+            <h2>Featured Books</h2>
+
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search for a book..."
+            >
+
+            <div class="books-container">
+
+                <article class="book-card">
+                    <img src="images/book1.jpg" alt="The Great Gatsby book cover">
+                    <h3>The Great Gatsby</h3>
+                    <p><strong>Author:</strong> F. Scott Fitzgerald</p>
+                    <p class="description">
+                        A classic novel about wealth, love, dreams, and society in the 1920s.
+                    </p>
+                    <button class="toggle-btn">Show / Hide Description</button>
+                    <button class="cart-btn">Add to Cart</button>
+                    <a href="#">Read More</a>
+                </article>
+
+                <article class="book-card">
+                    <img src="images/book2.jpg" alt="To Kill a Mockingbird book cover">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p><strong>Author:</strong> Harper Lee</p>
+                    <p class="description">
+                        A powerful story about justice, morality, and courage.
+                    </p>
+                    <button class="toggle-btn">Show / Hide Description</button>
+                    <button class="cart-btn">Add to Cart</button>
+                    <a href="#">Read More</a>
+                </article>
+
+                <article class="book-card">
+                    <img src="images/book3.jpg" alt="1984 book cover">
+                    <h3>1984</h3>
+                    <p><strong>Author:</strong> George Orwell</p>
+                    <p class="description">
+                        A dystopian novel exploring surveillance, control, and freedom.
+                    </p>
+                    <button class="toggle-btn">Show / Hide Description</button>
+                    <button class="cart-btn">Add to Cart</button>
+                    <a href="#">Read More</a>
+                </article>
+
+                <article class="book-card">
+                    <img src="images/book4.jpg" alt="Pride and Prejudice book cover">
+                    <h3>Pride and Prejudice</h3>
+                    <p><strong>Author:</strong> Jane Austen</p>
+                    <p class="description">
+                        A romantic novel about love, family, social class, and personal growth.
+                    </p>
+                    <button class="toggle-btn">Show / Hide Description</button>
+                    <button class="cart-btn">Add to Cart</button>
+                    <a href="#">Read More</a>
+                </article>
+
+                <article class="book-card">
+                    <img src="images/book5.jpg" alt="The Little Prince book cover">
+                    <h3>The Little Prince</h3>
+                    <p><strong>Author:</strong> Antoine de Saint-Exupéry</p>
+                    <p class="description">
+                        A poetic story about friendship, imagination, and the meaning of life.
+                    </p>
+                    <button class="toggle-btn">Show / Hide Description</button>
+                    <button class="cart-btn">Add to Cart</button>
+                    <a href="#">Read More</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Write your message"></textarea>
+
+                <button type="submit">Submit</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Online Bookstore</p>
+        <p id="dateTime"></p>
+    </footer>
+
+    <div id="toast">Book added to cart ✅</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
