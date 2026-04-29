@@ -45,6 +45,30 @@ header {
     padding: 20px;
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary);
+    color: white;
+    padding: 20px;
+}
+
+/* alignement gauche logo + titre */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* logo */
+.logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+
 /* NAVBAR */
 nav {
     display: flex;
@@ -159,6 +183,24 @@ section {
     height: 250px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .book-card {
+        flex: 0 0 calc(100% / 2); /* tablet = 2 */
+    }
+}
+
+@media (max-width: 600px) {
+    .book-card {
+        flex: 0 0 100%; /* mobile = 1 */
+    }
+
+    .slider-btn {
+        font-size: 18px;
+        height: 45px;
+        width: 45px;
+    }
 }
 
 /* DESCRIPTION */
