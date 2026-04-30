@@ -95,3 +95,14 @@ circleThumbs.forEach((thumb) => {
         }, 250);
     });
 });
+
+// Show / Hide hero book description
+const toggleHeroDescription = document.getElementById("toggleHeroDescription");
+
+toggleHeroDescription.addEventListener("click", () => {
+    if (heroDescription.style.display === "none") {
+        heroDescription.style.display = "block";
+    } else {
+        heroDescription.style.display = "none";
+    }
+});

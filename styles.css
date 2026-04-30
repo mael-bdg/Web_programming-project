@@ -13,8 +13,9 @@
     --hoverForm: #73bec3;
 
     /* DARK MODE */
-    --dark-bg: #000000;
-    --dark-surface: #211d1f;
+    --dark-bg: #1e0220;
+    --dark-surface: #000000;
+    --dark-nav: #2e0017;
     --dark-text: #ffffff;
 
     /* TYPOGRAPHY */
@@ -177,18 +178,18 @@ section {
 .book-info h2 {
     font-size: 3.5rem;
     line-height: 1.1;
-    color: white;
+    color: black;
     margin-bottom: 10px;
 }
 
 .book-info h3 {
     font-size: 1.4rem;
-    color: white;
+    color: black;
     margin-bottom: 20px;
 }
 
 .book-info p {
-    color: white;
+    color: black;
     font-size: 1rem;
     margin-bottom: 25px;
 }
@@ -200,7 +201,7 @@ section {
 }
 
 .hero-actions a {
-    color: white;
+    color: black;
     font-weight: bold;
     text-decoration: none;
 }
@@ -284,13 +285,13 @@ section {
 }
 
 .circle-thumb:nth-child(4) {
-    top: 200px;
-    left: 55px;
+    top: 215px;
+    left: 28px;
 }
 
 .circle-thumb:nth-child(5) {
-    top: 205px;
-    left: 155px;
+    top: 240px;
+    left: 105px;
 }
 
 .circle-thumb:hover,
@@ -355,6 +356,10 @@ section {
 /* DESCRIPTION */
 .description {
     margin: 10px 0;
+}
+
+#toggleHeroDescription {
+    margin-bottom: 15px;
 }
 
 /* BUTTON */
@@ -438,7 +443,7 @@ body.dark-mode footer {
 }
 
 body.dark-mode nav {
-    background-color: var(--dark-surface);
+    background-color: var(--dark-nav);
 }
 
 body.dark-mode .book-card {
