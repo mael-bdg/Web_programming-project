@@ -1,18 +1,3 @@
-// Show or hide book descriptions
-const buttons = document.querySelectorAll(".toggle-btn");
-
-buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-        const description = button.previousElementSibling;
-
-        if (description.style.display === "none") {
-            description.style.display = "block";
-        } else {
-            description.style.display = "none";
-        }
-    });
-});
-
 // Display current date and time in the footer
 function updateDateTime() {
     const dateTimeElement = document.getElementById("dateTime");
@@ -24,24 +9,6 @@ function updateDateTime() {
 setInterval(updateDateTime, 1000);
 updateDateTime();
 
-// Search / filter books
-const searchInput = document.getElementById("searchInput");
-const bookCards = document.querySelectorAll(".book-card");
-
-searchInput.addEventListener("input", () => {
-    const searchText = searchInput.value.toLowerCase();
-
-    bookCards.forEach((card) => {
-        const title = card.querySelector("h3").textContent.toLowerCase();
-        const author = card.querySelector("p").textContent.toLowerCase();
-
-        if (title.includes(searchText) || author.includes(searchText)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
-    });
-});
 
 // Contact form validation
 const contactForm = document.getElementById("contactForm");
@@ -69,12 +36,14 @@ contactForm.addEventListener("submit", (event) => {
     }
 });
 
+
 // Dark mode toggle
 const themeToggle = document.getElementById("themeToggle");
 
 themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
 });
+
 
 // Cart system with popup
 let cartCount = 0;
@@ -96,22 +65,33 @@ cartButtons.forEach((btn) => {
     });
 });
 
-const booksSlider = document.getElementById("booksSlider");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
 
-const scrollAmount = booksSlider.clientWidth / 3; // 👈 une carte
+// Interactive circular book carousel
+const interactiveSection = document.querySelector(".interactive-books");
+const heroImage = document.getElementById("heroImage");
+const heroTitle = document.getElementById("heroTitle");
+const heroAuthor = document.getElementById("heroAuthor");
+const heroDescription = document.getElementById("heroDescription");
+const circleThumbs = document.querySelectorAll(".circle-thumb");
 
-nextBtn.addEventListener("click", () => {
-    booksSlider.scrollBy({
-        left: scrollAmount,
-        behavior: "smooth"
-    });
-});
+circleThumbs.forEach((thumb) => {
+    thumb.addEventListener("click", () => {
+        circleThumbs.forEach((item) => item.classList.remove("active"));
+        thumb.classList.add("active");
 
-prevBtn.addEventListener("click", () => {
-    booksSlider.scrollBy({
-        left: -scrollAmount,
-        behavior: "smooth"
+        heroImage.classList.add("change");
+
+        setTimeout(() => {
+            heroImage.src = thumb.src;
+            heroImage.alt = thumb.alt;
+
+            heroTitle.textContent = thumb.dataset.title;
+            heroAuthor.textContent = thumb.dataset.author;
+            heroDescription.textContent = thumb.dataset.description;
+
+            interactiveSection.style.setProperty("--hero-bg", thumb.dataset.bg);
+
+            heroImage.classList.remove("change");
+        }, 250);
     });
 });

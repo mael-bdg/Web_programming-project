@@ -9,13 +9,20 @@
 <body>
 
     <header class="header">
-        <div class="header-left">
+    
+        <!-- Logo à gauche -->
+        <div class="logo-container">
             <img src="images/logo.png" alt="Logo" class="logo">
         </div>
-        <h1>Online Bookstore</h1>
-        <p>Your favorite place to discover amazing books</p>
-        <button id="themeToggle">🌙 Toggle Mode</button>
-        <p>🛒 Cart: <span id="cartCount">0</span></p>
+
+        <!-- Contenu centré -->
+        <div class="header-center">
+            <h1>Online Bookstore</h1>
+            <p>Your favorite place to discover amazing books</p>
+            <button id="themeToggle">🌙 Toggle Mode</button>
+            <p>🛒 Cart: <span id="cartCount">0</span></p>
+        </div>
+
     </header>
 
     <nav>
@@ -28,88 +35,66 @@
         <section id="welcome" class="welcome-section">
             <h2>Welcome to Our Bookstore</h2>
             <p>
-                Discover a selection of inspiring, educational, and entertaining books.
+                Discover a selection of inspiring, educational, and entertaining books.<br>
                 Our bookstore helps readers find their next favorite book easily.
             </p>
         </section>
 
-        <section id="books" class="books-section">
-            <h2>Featured Books</h2>
+        <section id="books" class="books-section interactive-books">
+            <div class="book-info">
+                <p class="section-label">Featured Book</p>
+                <h2 id="heroTitle">Howl's Moving Castle</h2>
+                <h3 id="heroAuthor">Diana Wynne Jones</h3>
 
-            <input 
-                type="text" 
-                id="searchInput" 
-                placeholder="Search for a book..."
-            >
+                <p id="heroDescription">
+                    A magical story about Sophie, a young woman cursed by a witch, and her journey with the mysterious wizard Howl in his moving castle.
+                </p>
 
-            <div class="slider-wrapper">
-                <button class="slider-btn" id="prevBtn">&#10094;</button>
-
-                <div class="books-container" id="booksSlider">
-
-                    <article class="book-card">
-                        <img src="images/book1.jpg" alt="Howl's Moving Castle cover">
-                        <h3>Howl's Moving Castle</h3>
-                        <p><strong>Author:</strong> Diana Wynne Jones</p>
-                        <p class="description">
-                            A magical story about Sophie, a young woman cursed by a witch, and her journey with the mysterious wizard Howl in his moving castle.
-                        </p>
-                        <button class="toggle-btn">Show / Hide Description</button>
-                        <button class="cart-btn">Add to Cart</button>
-                        <a href="#">Read More</a>
-                    </article>
-
-                    <article class="book-card">
-                        <img src="images/book2.jpg" alt="How to Be a Better Adult cover">
-                        <h3>How to Be a Better Adult</h3>
-                        <p><strong>Author:</strong> Jacque Aye</p>
-                        <p class="description">
-                            A thoughtful and empowering novel about self-growth, identity, and navigating adulthood with confidence and resilience.
-                        </p>
-                        <button class="toggle-btn">Show / Hide Description</button>
-                        <button class="cart-btn">Add to Cart</button>
-                        <a href="#">Read More</a>
-                    </article>
-
-                    <article class="book-card">
-                        <img src="images/book3.jpg" alt="The Vanishing Cherry Blossom Bookshop cover">
-                        <h3>The Vanishing Cherry Blossom Bookshop</h3>
-                        <p><strong>Author:</strong> Takuya Asakura</p>
-                        <p class="description">
-                            A heartwarming story set in Japan about a mysterious bookshop where every book holds a secret connected to memories and love.
-                        </p>
-                        <button class="toggle-btn">Show / Hide Description</button>
-                        <button class="cart-btn">Add to Cart</button>
-                        <a href="#">Read More</a>
-                    </article>
-
-                    <article class="book-card">
-                        <img src="images/book4.jpg" alt="How to Escape Death cover">
-                        <h3>How to Escape Death</h3>
-                        <p><strong>Author:</strong> Jacque Aye</p>
-                        <p class="description">
-                            A dark and captivating story about fate, survival, and the mysterious line between life and death.
-                        </p>
-                        <button class="toggle-btn">Show / Hide Description</button>
-                        <button class="cart-btn">Add to Cart</button>
-                        <a href="#">Read More</a>
-                    </article>
-
-                    <article class="book-card">
-                        <img src="images/book5.jpg" alt="Harry Potter and the Goblet of Fire cover">
-                        <h3>Harry Potter and the Goblet of Fire</h3>
-                        <p><strong>Author:</strong> J.K. Rowling</p>
-                        <p class="description">
-                            Harry competes in the dangerous Triwizard Tournament while facing growing dark forces and uncovering secrets about Voldemort’s return.
-                        </p>
-                        <button class="toggle-btn">Show / Hide Description</button>
-                        <button class="cart-btn">Add to Cart</button>
-                        <a href="#">Read More</a>
-                    </article>
-
+                <div class="hero-actions">
+                    <button class="cart-btn">Add to Cart</button>
+                    <a href="#">Read More</a>
                 </div>
+            </div>
 
-                <button class="slider-btn" id="nextBtn">&#10095;</button>
+            <div class="hero-book">
+                <img id="heroImage" src="images/book1.jpg" alt="Selected book cover">
+            </div>
+
+            <div class="circle-thumbnails">
+                <img src="images/book1.jpg" class="circle-thumb active"
+                    alt="Howl's Moving Castle cover"
+                    data-title="Howl's Moving Castle"
+                    data-author="Diana Wynne Jones"
+                    data-description="A magical story about Sophie, a young woman cursed by a witch, and her journey with the mysterious wizard Howl in his moving castle."
+                    data-bg="#b7e4df">
+
+                <img src="images/book2.jpg" class="circle-thumb"
+                    alt="How to Be a Better Adult cover"
+                    data-title="How to Be a Better Adult"
+                    data-author="Jacque Aye"
+                    data-description="A thoughtful and empowering novel about self-growth, identity, and navigating adulthood with confidence and resilience."
+                    data-bg="#7b2d4b">
+
+                <img src="images/book3.jpg" class="circle-thumb"
+                    alt="The Vanishing Cherry Blossom Bookshop cover"
+                    data-title="The Vanishing Cherry Blossom Bookshop"
+                    data-author="Takuya Asakura"
+                    data-description="A heartwarming story set in Japan about a mysterious bookshop where every book holds a secret connected to memories and love."
+                    data-bg="#f8b4c8">
+
+                <img src="images/book4.jpg" class="circle-thumb"
+                    alt="How to Escape Death cover"
+                    data-title="How to Escape Death"
+                    data-author="Jacque Aye"
+                    data-description="A dark and captivating story about fate, survival, and the mysterious line between life and death."
+                    data-bg="#6d2b5f">
+
+                <img src="images/book5.jpg" class="circle-thumb"
+                    alt="Harry Potter and the Goblet of Fire cover"
+                    data-title="Harry Potter and the Goblet of Fire"
+                    data-author="J.K. Rowling"
+                    data-description="Harry competes in the dangerous Triwizard Tournament while facing growing dark forces and uncovering secrets about Voldemort’s return."
+                    data-bg="#2f215f">
             </div>
         </section>
 
