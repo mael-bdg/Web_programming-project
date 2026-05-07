@@ -55,33 +55,29 @@ In charge : **Evie** _a.k.a_ [@galli](https://gitlab.esiea.fr/galli)
 
 #### Task 4: Contact form + footer
 In charge : **Jade** _a.k.a_ C
-1. 
-2. 
-3. 
+
 
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
 -> Notes : 
 
 #### Task 5: Système de panier d'achats
 In charge : **Maëlys** _a.k.a_ [@badger](https://github.com/mael-bdg)
-1. 
-2. 
+
+
 
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
 -> Notes :
 
 ### Task 6: Dark mode
 In charge : **Pauline** _a.k.a_ D
-1.
-2.
+
 
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
 -> Notes :
 
 ### Task 7: Section size
 In charge : **Jade** _a.k.a_ D
-1.
-2.
+
 
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
 -> Notes :
