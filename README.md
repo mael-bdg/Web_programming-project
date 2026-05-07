@@ -54,7 +54,7 @@ In charge : **Evie** _a.k.a_ [@galli](https://gitlab.esiea.fr/galli)
 -> Notes : 
 
 #### Task 4: Contact form + footer
-In charge : **Jade** _a.k.a_ C
+In charge : **Jade** _a.k.a_ [@lavigne](https://github.com/NightHowl1234)
 
 
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
@@ -76,7 +76,7 @@ In charge : **Pauline** _a.k.a_ D
 -> Notes :
 
 ### Task 7: Section size
-In charge : **Jade** _a.k.a_ D
+In charge : **Jade** _a.k.a_ [@lavigne](https://github.com/NightHowl1234)
 
 
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
