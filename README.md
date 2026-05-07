@@ -40,21 +40,21 @@ In charge : **Maëlys** _a.k.a_ [@badger](https://github.com/mael-bdg)
 -> Notes : 
 
 #### Task 2: Welcome section
-In charge : **Pauline** _a.k.a_ A
+In charge : **Pauline** _a.k.a_ [@savate](https://github.com/PaulineSavate)
 
 
 -> Status :![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
 -> Notes :
 
 #### Task 3: Featured book section 
-In charge : **Evie** _a.k.a_ [@galli](https://gitlab.esiea.fr/galli)
+In charge : **Evie** _a.k.a_ [@cherry](https://gitlab.esiea.fr/galli)
 
 
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
 -> Notes : 
 
 #### Task 4: Contact form + footer
-In charge : **Jade** _a.k.a_ [@lavigne](https://github.com/NightHowl1234)
+In charge : **Jade** _a.k.a_ [@dalgi](https://github.com/NightHowl1234)
 
 
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
@@ -69,14 +69,14 @@ In charge : **Maëlys** _a.k.a_ [@badger](https://github.com/mael-bdg)
 -> Notes :
 
 ### Task 6: Dark mode
-In charge : **Pauline** _a.k.a_ D
+In charge : **Pauline** _a.k.a_ [@savate](https://github.com/PaulineSavate)
 
 
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
 -> Notes :
 
 ### Task 7: Section size
-In charge : **Jade** _a.k.a_ [@lavigne](https://github.com/NightHowl1234)
+In charge : **Jade** _a.k.a_ [@dalgi](https://github.com/NightHowl1234)
 
 
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
@@ -135,8 +135,10 @@ Use examples liberally, and show the expected output if you can. It's helpful to
 
 ## Authors and acknowledgment
 
-* **Evie** _a.k.a_ [@galli](https://gitlab.esiea.fr/galli) **ID :**
-* **A** _a.k.a_ A **ID :**
+* **Maëlys** _a.k.a_ [@badger](https://github.com/mael-bdg) **ID :**
+* **Evie** _a.k.a_ [@cherry](https://gitlab.esiea.fr/galli) **ID :**
+* **Pauline** _a.k.a_ [@savate](https://github.com/PaulineSavate) **ID :**
+* **Jade** _a.k.a_ [@dalgi](https://github.com/NightHowl1234) **ID :**
 
 ## Project status
 
