@@ -33,7 +33,7 @@ Deadline: 5 June 2026
 ![DELAYED](https://img.shields.io/badge/DELAYED-%E2%9A%A0%EF%B8%8F-ff7a7a?labelColor=fc5151&style=for-the-badge) 
 
 #### Task 1: Header + Navigation section
-In charge : **Maëlys** _a.k.a_ B
+In charge : **Maëlys** _a.k.a_ [@badger](https://github.com/mael-bdg)
 
 
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
@@ -63,7 +63,7 @@ In charge : **Jade** _a.k.a_ C
 -> Notes : 
 
 #### Task 5: Système de panier d'achats
-In charge : **Maëlys** _a.k.a_ D
+In charge : **Maëlys** _a.k.a_ [@badger](https://github.com/mael-bdg)
 1. 
 2. 
 
