@@ -32,29 +32,29 @@ Deadline: 5 June 2026
 ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
 ![DELAYED](https://img.shields.io/badge/DELAYED-%E2%9A%A0%EF%B8%8F-ff7a7a?labelColor=fc5151&style=for-the-badge) 
 
-#### Task 1: title
+#### Task 1: Header + Navigation section
+In charge : **Maëlys** _a.k.a_ B
+
+
+-> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
+-> Notes : 
+
+#### Task 2: Welcome section
+In charge : **Pauline** _a.k.a_ A
+
+
+-> Status :![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
+-> Notes :
+
+#### Task 3: Featured book section 
 In charge : **Evie** _a.k.a_ [@galli](https://gitlab.esiea.fr/galli)
 
 
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
 -> Notes : 
 
-#### Task 2: title
-In charge : **A** _a.k.a_ A
-
-
--> Status :![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
--> Notes :
-
-#### Task 3: title 
-In charge : **B** _a.k.a_ B
-
-
--> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
--> Notes : 
-
-#### Task 4: title
-In charge : **C** _a.k.a_ C
+#### Task 4: Contact form + footer
+In charge : **Jade** _a.k.a_ C
 1. 
 2. 
 3. 
@@ -62,14 +62,29 @@ In charge : **C** _a.k.a_ C
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
 -> Notes : 
 
-#### Task 5: title
-In charge : **D** _a.k.a_ D
+#### Task 5: Système de panier d'achats
+In charge : **Maëlys** _a.k.a_ D
 1. 
 2. 
 
 -> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
 -> Notes :
 
+### Task 6: Dark mode
+In charge : **Pauline** _a.k.a_ D
+1.
+2.
+
+-> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
+-> Notes :
+
+### Task 7: Section size
+In charge : **Jade** _a.k.a_ D
+1.
+2.
+
+-> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
+-> Notes :
 
 ## Visuals
 Title 1
