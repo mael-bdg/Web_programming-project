@@ -36,8 +36,9 @@ Deadline: 5 June 2026
 In charge : **Evie** _a.k.a_ [@cherry](https://gitlab.esiea.fr/galli)
 
 
--> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
--> Notes :
+-> Status : ![Done](https://img.shields.io/badge/Done-%E2%9C%94-7ed9c0?labelColor=40b897&style=for-the-badge)
+
+-> Notes : Coded the basis of the website construction the temporary design of the website
 
 #### Task 2: Header + Navigation section
 In charge : **Maëlys** _a.k.a_ [@grapefruit](https://github.com/mael-bdg)
@@ -57,8 +58,9 @@ In charge : **Pauline** _a.k.a_ [@popo](https://github.com/PaulineSavate)
 In charge : **Evie** _a.k.a_ [@cherry](https://gitlab.esiea.fr/galli)
 
 
--> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
--> Notes : 
+-> Status : ![Done](https://img.shields.io/badge/Done-%E2%9C%94-7ed9c0?labelColor=40b897&style=for-the-badge)
+
+-> Notes : The book presentation designs with the background change animations 
 
 #### Task 5: Contact form + footer
 In charge : **Jade** _a.k.a_ [@dalgi](https://github.com/NightHowl1234)
@@ -99,22 +101,25 @@ Title 2
 
 ## Language
 
-HTML5
-CSS
-JavaScript
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) => HTML 5
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) => CSS
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) => JavaScript
 
 ## Getting started
 
-Use of Makefile: To compile the project, just run: make 
-Graphic user interface with raylib : The GUI was created using the Raylib library. It displays the supply network, allows interaction with domes and stations, and shows results visually (e.g., paths, drones, statuses). You can moves the nodes around as you please !
+Open `index.html` in a web browser with live server. It will display our interactive online bookstore website.
 
 ### Project Structure
 
 online-bookstore/ 
 ├── images/ 
-│ ├── a.png
-│ ├── b.png
-│ └── c.png
+│ ├── background.jpg
+│ ├── book1.jpg
+│ ├── book2.jpg
+│ ├── book3.jpg
+│ ├── book4.jpg
+│ ├── book5.jpg
+│ └── logo.png
 │ 
 ├── index.html
 │
@@ -140,6 +145,8 @@ Use examples liberally, and show the expected output if you can. It's helpful to
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-%3C/%3E-b5dfff?labelColor=78c2fa&style=for-the-badge)
 * [Visual Studio Code](https://code.visualstudio.com) - Code Editor
 
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+* [GitHub](https://github.com/) - Git Server
 
 ## Authors and acknowledgment
 
