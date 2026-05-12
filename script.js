@@ -88,9 +88,15 @@ circleThumbs.forEach((thumb) => {
             heroTitle.textContent = thumb.dataset.title;
             heroAuthor.textContent = thumb.dataset.author;
             heroDescription.textContent = thumb.dataset.description;
+            const bgColor = thumb.dataset.bg;
+            interactiveSection.style.setProperty("--hero-bg", bgColor);
 
-            interactiveSection.style.setProperty("--hero-bg", thumb.dataset.bg);
-
+            if (isDarkColor(bgColor)) {
+                interactiveSection.style.setProperty("--hero-text", "white");
+            } else {
+                interactiveSection.style.setProperty("--hero-text", "black");
+            }
+            
             heroImage.classList.remove("change");
         }, 250);
     });
@@ -106,3 +112,17 @@ toggleHeroDescription.addEventListener("click", () => {
         heroDescription.style.display = "none";
     }
 });
+
+// Determine if interactive bg color is dark to adapt color of the text
+function isDarkColor(hex) {
+    hex = hex.replace("#", "");
+
+    const r = parseInt(hex.substring(0, 2), 16);
+    const g = parseInt(hex.substring(2, 4), 16);
+    const b = parseInt(hex.substring(4, 6), 16);
+
+    // formule luminosité
+    const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+
+    return brightness < 128;
+}
