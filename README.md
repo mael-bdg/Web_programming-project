@@ -101,9 +101,9 @@ Title 2
 
 ## Language
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) => HTML 5
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) => CSS
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) => JavaScript
+* ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) => HTML 5
+* ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) => CSS
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) => JavaScript
 
 ## Getting started
 
@@ -151,7 +151,7 @@ Use examples liberally, and show the expected output if you can. It's helpful to
 ## Authors and acknowledgment
 
 * **Maëlys** _a.k.a_ [@grapefruit](https://github.com/mael-bdg) **ID :**
-* **Evie** _a.k.a_ [@cherry](https://gitlab.esiea.fr/galli) **ID :**
+* **Evie** _a.k.a_ [@cherry](https://github.com/evieg21) **ID : 26170038**
 * **Pauline** _a.k.a_ [@popo](https://github.com/PaulineSavate) **ID :**
 * **Jade** _a.k.a_ [@dalgi](https://github.com/NightHowl1234) **ID :**
 
