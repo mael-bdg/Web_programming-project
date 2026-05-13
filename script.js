@@ -176,3 +176,11 @@ toggleHeroDescription.addEventListener("click", () => {
         heroDescription.style.display = "none";
     }
 });
+
+toggleHeroDescription.addEventListener("click", () => {
+    if (heroDescription.style.display === "none") {
+        heroDescription.style.display = "block";
+    } else {
+        heroDescription.style.display = "none";
+    }
+});
