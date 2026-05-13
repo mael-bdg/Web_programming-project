@@ -51,7 +51,7 @@ In charge : **Maëlys** _a.k.a_ [@grapefruit](https://github.com/mael-bdg)
 In charge : **Pauline** _a.k.a_ [@popo](https://github.com/PaulineSavate)
 
 
--> Status :![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
+-> Status :![Done](https://img.shields.io/badge/Done-%E2%9C%94-7ed9c0?labelColor=40b897&style=for-the-badge)
 -> Notes :
 
 #### Task 4: Featured book section 
@@ -74,14 +74,14 @@ In charge : **Maëlys** _a.k.a_ [@grapefruit](https://github.com/mael-bdg)
 
 
 
--> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
+-> Status : ![Done](https://img.shields.io/badge/Done-%E2%9C%94-7ed9c0?labelColor=40b897&style=for-the-badge)
 -> Notes :
 
 ### Task 7: Dark mode
 In charge : **Pauline** _a.k.a_ [@popo](https://github.com/PaulineSavate)
 
 
--> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
+-> Status : ![Done](https://img.shields.io/badge/Done-%E2%9C%94-7ed9c0?labelColor=40b897&style=for-the-badge)
 -> Notes :
 
 ### Task 8: Section size
