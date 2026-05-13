@@ -45,24 +45,88 @@ themeToggle.addEventListener("click", () => {
 });
 
 
-// Cart system with popup
-let cartCount = 0;
+// Shopping cart system
+let cart = [];
 
 const cartDisplay = document.getElementById("cartCount");
-const cartButtons = document.querySelectorAll(".cart-btn");
+const cartItems = document.getElementById("cartItems");
+const emptyCartMessage = document.getElementById("emptyCartMessage");
+
+const addToCartBtn = document.getElementById("addToCartBtn");
 const toast = document.getElementById("toast");
 
-cartButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-        cartCount++;
-        cartDisplay.textContent = cartCount;
+// Update cart display
+function updateCart() {
 
-        toast.classList.add("show");
+    // Update counter
+    cartDisplay.textContent = cart.length;
 
-        setTimeout(() => {
-            toast.classList.remove("show");
-        }, 2000);
+    // Clear old list
+    cartItems.innerHTML = "";
+
+    // Show message if cart is empty
+    if (cart.length === 0) {
+        emptyCartMessage.style.display = "block";
+    } else {
+        emptyCartMessage.style.display = "none";
+    }
+
+    // Display books
+    cart.forEach((book, index) => {
+
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+            <strong>${book.title}</strong> - ${book.author}
+            <button class="remove-btn" data-index="${index}">
+                Remove
+            </button>
+        `;
+
+        cartItems.appendChild(li);
     });
+
+    // Remove buttons
+    const removeButtons = document.querySelectorAll(".remove-btn");
+
+    removeButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+
+            const index = button.dataset.index;
+
+            cart.splice(index, 1);
+
+            updateCart();
+        });
+    });
+}
+
+// Show / Hide cart section
+const cartIcon = document.getElementById("cartIcon");
+const cartSection = document.getElementById("cartSection");
+
+cartIcon.addEventListener("click", () => {
+    cartSection.classList.toggle("hidden");
+});
+
+// Add selected book
+addToCartBtn.addEventListener("click", () => {
+
+    const selectedBook = {
+        title: heroTitle.textContent,
+        author: heroAuthor.textContent
+    };
+
+    cart.push(selectedBook);
+
+    updateCart();
+
+    // Toast popup
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 2000);
 });
 
 

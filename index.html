@@ -20,7 +20,23 @@
             <h1>Online Bookstore</h1>
             <p>Your favorite place to discover amazing books</p>
             <button id="themeToggle">🌙 Toggle Mode</button>
-            <p>🛒 Cart: <span id="cartCount">0</span></p>
+           <div class="cart-container">
+
+    <div class="cart-icon" id="cartIcon">
+        🛒 <span id="cartCount">0</span>
+    </div>
+
+    <section class="cart-section hidden" id="cartSection">
+        <h2>Your Cart</h2>
+
+        <ul id="cartItems"></ul>
+
+        <p id="emptyCartMessage">
+            Your cart is empty.
+        </p>
+    </section>
+
+</div>
         </div>
 
     </header>
@@ -53,7 +69,7 @@
                 <button id="toggleHeroDescription">Show / Hide Description</button>
 
                 <div class="hero-actions">
-                    <button class="cart-btn">Add to Cart</button>
+                    <button class="cart-btn" id="addToCartBtn">Add to Cart</button>
                     <a href="#">Read More</a>
                 </div>
             </div>
