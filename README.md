@@ -91,6 +91,13 @@ In charge : **Jade** _a.k.a_ [@dalgi](https://github.com/NightHowl1234)
 -> Status : ![IN PROGRESS](https://img.shields.io/badge/IN%20PROGRESS-%F0%9F%92%BB-e6a1ff?labelColor=d663ff&style=for-the-badge)
 -> Notes :
 
+### Task 9: Easter egg
+In charge : **Everyone** 
+
+
+-> Status : ![IN PROGRESS](https://img.shields.io/badge/IN%20PROGRESS-%F0%9F%92%BB-e6a1ff?labelColor=d663ff&style=for-the-badge)
+-> Notes :
+
 
 ## Visuals
 Title 1
