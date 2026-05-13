@@ -152,9 +152,15 @@ circleThumbs.forEach((thumb) => {
             heroTitle.textContent = thumb.dataset.title;
             heroAuthor.textContent = thumb.dataset.author;
             heroDescription.textContent = thumb.dataset.description;
+            const bgColor = thumb.dataset.bg;
+            interactiveSection.style.setProperty("--hero-bg", bgColor);
 
-            interactiveSection.style.setProperty("--hero-bg", thumb.dataset.bg);
-
+            if (isDarkColor(bgColor)) {
+                interactiveSection.style.setProperty("--hero-text", "white");
+            } else {
+                interactiveSection.style.setProperty("--hero-text", "black");
+            }
+            
             heroImage.classList.remove("change");
         }, 250);
     });
