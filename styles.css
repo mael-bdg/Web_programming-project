@@ -114,10 +114,10 @@ section {
 
 /* WELCOME SECTION */
 .welcome-section {
-    --welcome-text: rgb(173, 67, 121);
-    --welcome-overlay: rgba(0, 0, 0, 0);
+    --welcome-text: rgb(0, 0, 0);
+    --welcome-overlay: rgba(250, 250, 250, 0.45);
 
-    background-image: url("images/background.jpg");
+    background-image: url("images/backgroundWelcome.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,6 +147,11 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+.welcome-section > * {
+    transform: translateY(-30px); /*to have the text slightly off center*/
 }
 
 /* INTERACTIVE BOOKS CAROUSEL */
@@ -458,7 +463,7 @@ body.dark-mode nav {
 
 body.dark-mode .welcome-section {
     --welcome-text: var(--dark-text);
-    --welcome-overlay: rgba(54, 19, 39, 0.7);
+    --welcome-overlay: rgba(0, 0, 0, 0.55);
 }
 
 body.dark-mode .interactive-books::before {
