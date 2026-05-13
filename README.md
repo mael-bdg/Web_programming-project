@@ -44,7 +44,7 @@ In charge : **Evie** _a.k.a_ [@cherry](https://gitlab.esiea.fr/galli)
 In charge : **Maëlys** _a.k.a_ [@grapefruit](https://github.com/mael-bdg)
 
 
--> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
+-> Status : ![IN PROGRESS](https://img.shields.io/badge/IN%20PROGRESS-%F0%9F%92%BB-e6a1ff?labelColor=d663ff&style=for-the-badge)
 -> Notes : 
 
 #### Task 3: Welcome section
@@ -66,7 +66,7 @@ In charge : **Evie** _a.k.a_ [@cherry](https://gitlab.esiea.fr/galli)
 In charge : **Jade** _a.k.a_ [@dalgi](https://github.com/NightHowl1234)
 
 
--> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
+-> Status : ![IN PROGRESS](https://img.shields.io/badge/IN%20PROGRESS-%F0%9F%92%BB-e6a1ff?labelColor=d663ff&style=for-the-badge)
 -> Notes : 
 
 #### Task 6: Shopping cart system
@@ -88,7 +88,7 @@ In charge : **Pauline** _a.k.a_ [@popo](https://github.com/PaulineSavate)
 In charge : **Jade** _a.k.a_ [@dalgi](https://github.com/NightHowl1234)
 
 
--> Status : ![to do](https://img.shields.io/badge/to%20do-%E2%9D%A4-f797b5?labelColor=fa6e9a&style=for-the-badge)
+-> Status : ![IN PROGRESS](https://img.shields.io/badge/IN%20PROGRESS-%F0%9F%92%BB-e6a1ff?labelColor=d663ff&style=for-the-badge)
 -> Notes :
 
 
