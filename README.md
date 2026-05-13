@@ -152,8 +152,8 @@ Use examples liberally, and show the expected output if you can. It's helpful to
 
 * **Maëlys** _a.k.a_ [@grapefruit](https://github.com/mael-bdg) **ID : 26170016**
 * **Evie** _a.k.a_ [@cherry](https://github.com/evieg21) **ID : 26170038**
-* **Pauline** _a.k.a_ [@popo](https://github.com/PaulineSavate) **ID :**
-* **Jade** _a.k.a_ [@dalgi](https://github.com/NightHowl1234) **ID :**
+* **Pauline** _a.k.a_ [@popo](https://github.com/PaulineSavate) **ID : 26170022**
+* **Jade** _a.k.a_ [@dalgi](https://github.com/NightHowl1234) **ID :26170096**
 
 ## Project status
 
