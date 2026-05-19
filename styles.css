@@ -114,7 +114,7 @@ section {
 
 /* WELCOME SECTION */
 .welcome-section {
-    --welcome-text: rgb(0, 0, 0);
+    --welcome-text: rgb(49, 47, 47);
     --welcome-overlay: rgba(250, 250, 250, 0.45);
 
     background-image: url("images/backgroundWelcome.webp");
@@ -123,7 +123,7 @@ section {
     background-repeat: no-repeat;
 
     color: var(--welcome-text);
-    padding: 100px 20px;
+    padding: 210px 20px;
     position: relative;
 }
 
@@ -137,6 +137,9 @@ section {
     background: var(--welcome-overlay); /* assombrit */
 }
 
+.welcome-section h2 {
+    font-size: 40px;
+}
 .welcome-section * {
     position: relative;
     z-index: 1;
@@ -151,7 +154,8 @@ section {
 
 
 .welcome-section > * {
-    transform: translateY(-30px); /*to have the text slightly off center*/
+    transform: translateY(-50px); /*to have the text slightly off center*/
+    font-size: 25px;
 }
 
 /* INTERACTIVE BOOKS CAROUSEL */
@@ -405,29 +409,67 @@ button:hover {
 }
 
 
+/*CONTACT SECTION*/
 
-/* CONTACT FORM */
-form {
-    max-width: 400px;
-    margin: auto;
+
+.contact-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
 }
 
-form input,
-form textarea {
-    padding: 10px;
-    margin: 10px 0;
+.contact-section h2 {
+    margin-top: -50px;
+    margin-bottom: 25px;
+}
+
+#contactForm {
+    width: 100%;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.name-row {
+    display: flex;
+    gap: 17px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 20px;
     border-radius: 5px;
-    border: 1px solid var(--dark-text);
+    border: 1px solid black;
 }
 
-form button {
-    background-color: var(--accent);
+textarea {
+    min-height: 120px;
+    resize: vertical;
 }
 
-form button:hover {
-    background-color: var(--hoverForm);
+button {
+    width: 180px;
+    align-self: center;
+
+    padding: 17px;
+    border: none;
+    border-radius: 7px;
+
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -435,7 +477,7 @@ footer {
     background-color: var(--secondary);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     margin-top: 30px;
 }
 
