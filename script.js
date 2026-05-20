@@ -289,3 +289,22 @@ document.addEventListener("click", (event) => {
         searchResults.classList.add("hidden");
     }
 });
+
+
+//mettre des confettis pour easter egg logo
+const logo = document.querySelector('.logo');
+
+logo.addEventListener('click', () => {
+    confetti({
+        particleCount: 400,
+        spread: 200,
+        colors: ['#b073c1', '#f494af', '#73c394'],
+        origin: { y:1, x:0 }
+    });
+    confetti({
+        particleCount: 400,
+        spread: 200,
+        colors: ['#b073c1', '#f494af', '#73c394'],
+        origin: { y:1, x:1 }
+    });
+});
