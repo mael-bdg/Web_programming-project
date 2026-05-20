@@ -133,22 +133,36 @@
         </section>
 
         <section id="contact" class="contact-section">
-            <h2>Contact Us</h2>
+    <h2>Ask a Question</h2>
 
-            <form id="contactForm">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name">
+    <form id="contactForm">
+        <div class="name-row">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email">
+            <div class="input-group">
+                <label for="firstName">First Name</label>
+                <input type="firstName" id="firstName" placeholder="Your first name">
+            </div>
 
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Write your message"></textarea>
+            <div class="input-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Your last name">
+            </div>
 
-                <button type="submit">Submit</button>
-                <p id="formMessage"></p>
-            </form>
-        </section>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your email">
+        </div>
+        <div class="input-group">
+            <label for="message">Give us your opinion</label>
+            <input type="message" id="message" placeholder="Type your message">
+        </div>
+
+        <button type="submit">SEND</button>
+
+    </form>
+</section>
     </main>
 
     <footer>
