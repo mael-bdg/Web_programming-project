@@ -646,3 +646,112 @@ html {
         transform: translateY(0);
     }
 }
+
+
+html, body {
+    cursor: url('images/books\ cursor\ close.png'), auto;
+}
+
+/* Curseur au survol des éléments interactifs (Livre ouvert) */
+a, 
+button, 
+.circle-thumb, 
+.hero-image, 
+.cart-icon,
+input,
+textarea {
+    cursor: url('images/books\ cursor\ open.png'), pointer;
+}
+
+.search-container {
+    position: relative;
+    max-width: 400px;
+    margin: 15px auto 0 auto;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-results {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 2000;
+    max-height: 250px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.search-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    gap: 10px;
+}
+
+.search-item:last-child {
+    border-bottom: none;
+}
+
+.search-item-info {
+    font-size: 0.9rem;
+}
+
+.search-item-info strong {
+    display: block;
+    color: #333;
+}
+
+.search-item-info span {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.search-add-btn {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-top: 0; /* Évite le décalage du bouton global */
+}
+
+.search-add-btn:hover {
+    background-color: var(--hoverForm);
+}
+
+.no-results {
+    padding: 12px;
+    text-align: center;
+    color: gray;
+    font-size: 0.9rem;
+}
+
+body.dark-mode .search-results {
+    background: var(--dark-surface);
+    color: var(--dark-text);
+}
+body.dark-mode .search-item {
+    border-bottom: 1px solid #6d4b55;
+}
+body.dark-mode .search-item-info strong {
+    color: var(--dark-text);
+}
+body.dark-mode .search-item-info span {
+    color: #ccc;
+}

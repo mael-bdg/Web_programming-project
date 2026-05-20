@@ -177,14 +177,6 @@ toggleHeroDescription.addEventListener("click", () => {
     }
 });
 
-toggleHeroDescription.addEventListener("click", () => {
-    if (heroDescription.style.display === "none") {
-        heroDescription.style.display = "block";
-    } else {
-        heroDescription.style.display = "none";
-    }
-});
-
 // Fonction pour déterminer si une couleur est sombre (à ajouter)
 function isDarkColor(hex) {
     if (!hex) return false;
@@ -194,3 +186,99 @@ function isDarkColor(hex) {
     const brightness = (r * 299 + g * 587 + b * 114) / 1000;
     return brightness < 128;
 }
+
+
+// --- SYSTÈME DE BARRE DE RECHERCHE ---
+
+const searchInput = document.getElementById("searchInput");
+const searchResults = document.getElementById("searchResults");
+
+// 1. Récupérer la liste des livres disponibles à partir des miniatures HTML
+function getAvailableBooks() {
+    const thumbs = document.querySelectorAll(".circle-thumb");
+    const booksList = [];
+    
+    thumbs.forEach(thumb => {
+        booksList.push({
+            title: thumb.dataset.title,
+            author: thumb.dataset.author
+        });
+    });
+    return booksList;
+}
+
+// 2. Écouter la saisie dans la barre de recherche
+searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase().trim();
+    
+    // Si la barre est vide, on cache les résultats
+    if (query === "") {
+        searchResults.innerHTML = "";
+        searchResults.classList.add("hidden");
+        return;
+    }
+
+    const allBooks = getAvailableBooks();
+    // Filtrer les livres par titre ou par auteur
+    const filteredBooks = allBooks.filter(book => 
+        book.title.toLowerCase().includes(query) || 
+        book.author.toLowerCase().includes(query)
+    );
+
+    // Vider les anciens résultats
+    searchResults.innerHTML = "";
+    searchResults.classList.remove("hidden");
+
+    if (filteredBooks.length === 0) {
+        searchResults.innerHTML = `<div class="no-results">No books found 😕</div>`;
+        return;
+    }
+
+    // Afficher les livres correspondants
+    filteredBooks.forEach(book => {
+        const itemDiv = document.createElement("div");
+        itemDiv.classList.add("search-item");
+
+        itemDiv.innerHTML = `
+            <div class="search-item-info">
+                <strong>${book.title}</strong>
+                <span>${book.author}</span>
+            </div>
+            <button class="search-add-btn">Add</button>
+        `;
+
+        // Événement pour ajouter au panier depuis la recherche
+        const addBtn = itemDiv.querySelector(".search-add-btn");
+        addBtn.addEventListener("click", () => {
+            // Ajouter au tableau global 'cart' (votre variable existante)
+            cart.push({
+                title: book.title,
+                author: book.author
+            });
+
+            // Mettre à jour le panier (votre fonction existante)
+            updateCart();
+
+            // Déclencher votre animation Toast existante
+            const toast = document.getElementById("toast");
+            toast.classList.add("show");
+            setTimeout(() => {
+                toast.classList.remove("show");
+            }, 2000);
+
+            // Optionnel : Réinitialiser la barre de recherche après l'ajout
+            searchInput.value = "";
+            searchResults.innerHTML = "";
+            searchResults.classList.add("hidden");
+        });
+
+        searchResults.appendChild(itemDiv);
+    });
+});
+
+// Fermer les résultats si on clique n'importe où ailleurs sur la page
+document.addEventListener("click", (event) => {
+    if (!searchInput.contains(event.target) && !searchResults.contains(event.target)) {
+        searchResults.classList.add("hidden");
+    }
+});
